@@ -1,0 +1,392 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #f7f1e9;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+.nav_list ul{
+    display: flex;
+}
+
+.nav_list ul a{
+    color: #545a5ffb;
+    margin: 0 30px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.nav_list ul a:hover {
+    color: #000000;
+    transition: 0.5s;
+}
+
+.area_entrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area_entrar div {
+    margin: 0 10px;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFCB82;
+    width: 35px;
+    height: 30px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: inset 0 0 5px #d49439;
+}
+
+.cart i{
+    color: #323538;
+}
+
+.buy {
+    position: absolute;
+    top: -8px;
+    right: 11px;
+    background-color: #ec6952;
+    border-radius: 10px;
+    padding: 1px 4px;
+}
+
+.lupa {
+    width: 35px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff2e7;
+    border-radius: 10px;
+    border: solid 1px #dfd9d9;
+}
+
+.lupa i {
+    color: #aaa5a5;
+    font-size: 20px;
+}
+
+.fone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 30px;
+    background-color: #323538;
+    border-radius: 10px;
+}
+
+.fone i {
+    color: #fff;
+}
+
+.area_entrar i:hover {
+    color: #cf9d56;
+}
+
+/******/
+
+.menu {
+    position: absolute;
+    cursor: pointer;
+    right: 15px;
+    margin-top: 10px;
+
+    display: none;
+    font-size: 30px;
+
+    
+    z-index: 999;
+}
+
+@media screen and (max-width: 800px) {
+
+    .menu {
+        display: block;
+        z-index: 999;
+    }
+
+    .navigation {
+        position: fixed;
+        align-items: center;
+        top: 0px;
+        right: -100%;
+
+        height: 100vh;
+        margin: 0;
+        background-color: #ffcb82da;
+
+        width: 100%;
+        max-width: 250px;
+
+        flex-direction: column;
+
+        transition: 0.6s ease;
+
+        z-index: 800;
+    }
+
+    .nav_list ul{
+        flex-direction: column;
+    }
+
+    .nav_list ul li {
+        margin: 30px 0;
+    }
+
+    .nav_list ul a {
+        font-size: 20px;
+    }
+
+
+    .navigation.activeMenu {
+        right: 0%;
+    }
+
+}
+
+#layout {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.descriptions {
+    width: 40vw;
+    min-width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+}
+
+.descriptions .Welcome{
+    color: #545a5ffb;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.descriptions h1 {
+    color: #323538;
+    padding: 0px 10px 20px 10px;
+    font-size: 60px;
+}
+
+.descriptions div {
+    width: 50%;
+    color: #545a5ffb;
+    border-left: 3px solid #32353898;
+    margin-left: 10px;
+    padding-left: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.shop {
+    padding: 10px 23px; 
+    border-radius: 25px;
+    border: none;
+    background-color: #FFCB82;
+    font-weight: 600;
+    color: #323538;
+    cursor: pointer;
+}
+
+.services {
+    padding: 10px 23px;  
+    border-radius: 25px;
+    background-color: #fff;
+    border: solid 1px #32353871;
+    font-weight: 600;
+    color: #323538;
+    cursor: pointer;
+}
+
+.shop:hover {
+    background-color: #d49d50;
+    transition: 0.5s;
+}
+
+.services:hover {
+    background-color: #bebebe;
+    transition: 0.5s;
+}
+
+.img_layout {
+    width: 35vw;
+    min-width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.img_layout img {
+    width: 500px;
+}
+
+.cookie {
+    background-color: #f1e9de;   
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 3px;
+    border-radius: 10px;
+    top: 10px;
+    right: 30px;
+    transform: rotate(-10deg);
+}
+
+.cookie p {
+    font-size: 12px;
+    padding: 5px;
+}
+
+.cookie a {
+    background-color: #cf9d56;
+    font-size: 11px;
+    padding: 2px 5px;
+    border-radius: 10px;
+    color: #000;
+}
+
+.img_cookie {
+    width: 35px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.img_cookie img {
+    width: 30px;
+}
+
+.ration {
+    background-color: #f1e9de;   
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 3px;
+    border-radius: 10px;
+    bottom: 80px;
+    transform: rotate(-10deg);
+}
+
+.ration p {
+    font-size: 12px;
+    padding: 5px;
+}
+
+.ration a {
+    background-color: #cf9d56;
+    font-size: 11px;
+    padding: 2px 5px;
+    border-radius: 10px;
+    color: #000;
+}
+
+.img_cookie {
+    width: 35px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.img_ration img {
+    width: 30px;
+}
+
+.collar {
+    background-color: #f1e9de;   
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 3px;
+    border-radius: 10px;
+    bottom: 10px;
+    right: 5px;
+    transform: rotate(10deg);
+}
+
+.collar p {
+    font-size: 12px;
+    padding: 5px;
+}
+
+.collar a {
+    background-color: #cf9d56;
+    font-size: 11px;
+    padding: 2px 5px;
+    border-radius: 10px;
+    color: #000;
+}
+
+.img_collar {
+    width: 35px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.img_collar img {
+    width: 30px;
+}
+
+
+@media screen and (max-width: 575.98px) {
+    .descriptions {
+        padding-left: 0px;
+        margin-top: 30px;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .descriptions h1 {
+        margin-bottom: 20px;
+    }
+
+    .descriptions div {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    .img_layout img {
+        width: 330px;
+    }
+
+    .img_cookie img {
+        width: 30px;
+    }
+
+    .img_ration img {
+        width: 30px;
+    }
+
+    .img_collar img {
+        width: 30px;
+    }
+
+}
+
+
+
